@@ -14,23 +14,24 @@
 }
 
 .head-title {
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
 .section-title {
-  font-size: 3.5rem;
-  margin: 10rem 0 7rem 0;
+  font-size: 2rem;
+  margin: 5rem 0 3rem 0;
 }
 
 .section-text {
   color: gray;
-  font-size: 1.25rem;
-  line-height: 2.25rem;
-  margin-bottom: 10rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 .bg-section {
-  height: 85vh;
+  height: 60vh;
   background: url(../img/bg-img.jpeg) center/cover no-repeat;
 }
 
@@ -48,54 +49,71 @@
 .footer {
   background: #f4f4f4;
   display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.fa-long-arrow-alt-left,
+.fa-long-arrow-alt-right {
+  padding: 1.5rem;
+}
+
+.fa-long-arrow-alt-left:hover,
+.fa-long-arrow-alt-right:hover {
+  background: #000;
+  color: #fff;
+}
+
+.social-wrapper,
+.text-wrapper {
+  width: 50%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.social-wrapper,
-.arrow-wrapper,
-.text-wrapper {
-  width: 33.333%;
-}
-
-.social-wrapper,
-.text-wrapper {
-  padding-left: 4rem;
-}
-
-.social-wrapper {
+.icon-wrapper {
   font-size: 1.5rem;
+  padding-left: 2rem;
 }
 
-.social-wrapper > i {
-  margin-right: 1rem;
+.fa-facebook-square {
+  padding-right: 1rem;
 }
 
-.arrow-wrapper {
-  text-align: center;
-}
-
-.arrow-wrapper > i {
-  color: #000;
-  padding: 2rem;
-}
-
-.arrow-wrapper > i:hover {
-  color: #fff;
-  background: #000;
-}
-
-.text-wrapper p:first-of-type {
+.text-wrapper p {
+  width: 6rem;
   font-weight: bold;
+  padding-right: 1rem;
 }
 
-.text-wrapper p:last-of-type {
-  color: gray;
-  font-size: 0.75rem;
-  line-height: 1.2rem;
+.text-wrapper span {
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
+  .head-title {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 3.5rem;
+    margin: 10rem 0 7rem 0;
+  }
+
+  .section-text {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  .text-wrapper p {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 1440px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -113,29 +131,11 @@
   }
 
   .bg-section {
-    height: 89vh;
+    height: 93vh;
   }
 
   .social-wrapper {
     text-align: start;
     padding-left: 3rem;
-  }
-
-  .arrow-wrapper > i {
-    padding: 3rem;
-  }
-
-  .text-wrapper {
-    text-align: end;
-    padding-right: 3rem;
-  }
-
-  .text-wrapper p:first-of-type {
-    font-size: 1.3rem;
-  }
-
-  .text-wrapper p:last-of-type {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
